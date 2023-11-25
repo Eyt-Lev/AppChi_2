@@ -12,7 +12,7 @@ From Google Play (**Note! Google Play has the latest version which is probably n
 
 <a href="https://play.google.com/store/apps/details?id=com.nosh.appchi"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="64"></a>
 
-Or [APK](6.apk) Latest version (**Of AppChi 2!**) v2.0.1.
+Or [APK](https://github.com/Eyt-Lev/AppChi_2/blob/master/6.apk) Latest version (**Of AppChi 2!**) v2.0.1.
 
 ## Features
 
