@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".main.ToolsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/JoeksActivty"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_baseline_cruelty_free_24"
+            app:iconSize="40dp"
+            app:iconTint="#4B463F" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/ht_activity"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_baseline_change_history_24"
+            app:iconSize="40dp"
+            app:iconTint="#4B463F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button347"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/fart_activity"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_baseline_local_gas_station_24"
+            app:iconSize="40dp"
+            app:iconTint="#4B463F" />
+
+    </LinearLayout>
+
+</LinearLayout>

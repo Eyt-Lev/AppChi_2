@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/myCoordinatorLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".tools.Random"
+        tools:layout_editor_absoluteY="81dp">
+
+        <Button
+            android:id="@+id/btnrandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/roll"
+            android:textColor="#424242"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/special" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnrandom" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="172dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:clipChildren="false"
+            android:contentDescription="@string/chose"
+            android:contextClickable="false"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="181dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/num1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/chosedradio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/roll_dice" />
+
+            <RadioButton
+                android:id="@+id/insertradio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generate_random_number"
+                tools:layout_editor_absoluteY="48dp" />
+
+            <RadioButton
+                android:id="@+id/passwordradio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generate_password"
+                tools:layout_editor_absoluteY="96dp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:autofillHints="1"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+            app:layout_constraintStart_toEndOf="@+id/num2"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints="2"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+            app:layout_constraintEnd_toStartOf="@+id/num1"
+            app:layout_constraintStart_toEndOf="@+id/num2"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="172dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/password_legth"
+            android:inputType="number"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+            app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+        <CheckBox
+            android:id="@+id/lettres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/letters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+        <CheckBox
+            android:id="@+id/numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/numbrees"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lettres" />
+
+        <CheckBox
+            android:id="@+id/uppercase_letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/uppercase"
+            app:layout_constraintStart_toEndOf="@+id/lettres"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+        <CheckBox
+            android:id="@+id/special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/special"
+            app:layout_constraintStart_toEndOf="@+id/numbers"
+            app:layout_constraintTop_toBottomOf="@+id/uppercase_letters" />
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="@string/ads_banner_id"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

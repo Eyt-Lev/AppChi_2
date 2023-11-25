@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="random"
+        android:enabled="true"
+        android:icon="@drawable/dice6"
+        android:shortcutShortLabel="@string/compose_shortcut_short_label1"
+        android:shortcutLongLabel="@string/compose_shortcut_long_label1"
+        android:shortcutDisabledMessage="@string/compose_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nosh.appchi"
+            android:targetClass="com.nosh.appchi.tools.Random" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+    <!--
+    <shortcut
+        android:shortcutId="light"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_flashlight_on_24"
+        android:shortcutShortLabel="@string/flashlight"
+        android:shortcutLongLabel="@string/flash_info"
+        android:shortcutDisabledMessage="@string/compose_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nosh.appchi"
+            android:targetClass="com.nosh.appchi.tools.Light" />
+        If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut.
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="lang"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_translate_24"
+        android:shortcutShortLabel="@string/languages_activity"
+        android:shortcutLongLabel="@string/lang_explain"
+        android:shortcutDisabledMessage="@string/compose_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nosh.appchi"
+            android:targetClass="com.nosh.appchi.tools.Lang" />
+        If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut.
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+    -->
+    <capability android:name="actions.intent.START_EXERCISE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nosh.appchi"
+            android:targetClass="com.nosh.appchi.tools.Random">
+            <parameter
+                android:name="exercise.name"
+                android:key="exerciseType"/>
+        </intent>
+    </capability>
+</shortcuts>

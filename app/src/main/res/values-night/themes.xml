@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MyFirstApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">#FFC107</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#021D53</item>
+        <item name="colorSecondaryVariant">#050187</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/main_color</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MyFirstApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.AppSplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.MyFirstApp</item>
+        <!-- Status bar and Nav bar configs -->
+        <item name="android:statusBarColor" >@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.MyFirstApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MyFirstApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

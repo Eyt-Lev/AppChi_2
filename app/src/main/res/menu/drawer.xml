@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+            -->
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/updates"
+        android:icon="@drawable/ic_baseline_autorenew_24"
+        android:title="@string/check_updates" />
+
+    <item android:title="@string/Productivity">
+        <menu>
+            <item
+                android:id="@+id/tasks"
+                android:icon="@drawable/ic_baseline_checklist_24"
+                android:title="@string/tasks_activity" />
+            <item
+                android:id="@+id/lang"
+                android:icon="@drawable/ic_baseline_translate_24"
+                android:title="@string/languages_activity" />
+        </menu>
+    </item>
+    <item android:title="@string/Tools">
+        <menu>
+            <item
+                android:id="@+id/random"
+                android:icon="@drawable/dice6"
+                android:title="@string/random" />
+            <item
+                android:id="@+id/metronome"
+                android:icon="@drawable/ic_baseline_music_note_24"
+                android:title="@string/Metronome" />
+            <item
+                android:id="@+id/bmi"
+                android:icon="@drawable/ic_baseline_calculate_24"
+                android:title="@string/bmi_activity" />
+            <item
+                android:id="@+id/light"
+                android:icon="@drawable/ic_baseline_flashlight_on_24"
+                android:title="@string/flashlight" />
+            <item
+                android:id="@+id/dw"
+                android:icon="@drawable/ic_baseline_send_24"
+                android:title="@string/d_whatsapp" />
+            <item
+                android:id="@+id/record"
+                android:icon="@drawable/ic_baseline_mic_24"
+                android:title="@string/microphone" />
+        </menu>
+    </item>
+    <item android:title="@string/fun">
+        <menu>
+            <item
+                android:id="@+id/jokes"
+                android:icon="@drawable/fun_icon"
+                android:title="@string/JoeksActivty" />
+            <item
+                android:id="@+id/hallel"
+                android:icon="@drawable/ic_baseline_change_history_24"
+                android:title="@string/ht_activity" />
+        </menu>
+    </item>
+
+</menu>

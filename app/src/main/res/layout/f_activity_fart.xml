@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fun.Fart">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fart1"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart1"
+                    android:textColor="#424242" />
+
+                <Button
+                    android:id="@+id/fart2"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart2"
+                    android:textColor="#424242" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fart3"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart3"
+                    android:textColor="#424242" />
+
+                <Button
+                    android:id="@+id/fart4"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart4"
+                    android:textColor="#424242" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fart5"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart5"
+                    android:textColor="#424242" />
+
+                <Button
+                    android:id="@+id/fart6"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart6"
+                    android:textColor="#424242" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fart7"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart7"
+                    android:textColor="#424242" />
+
+                <Button
+                    android:id="@+id/fart8"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart8"
+                    android:textColor="#424242" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fart9"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart9"
+                    android:textColor="#424242" />
+
+                <Button
+                    android:id="@+id/fart10"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart10"
+                    android:textColor="#424242" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fart11"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart11"
+                    android:textColor="#424242" />
+
+                <Button
+                    android:id="@+id/fart12"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/fart12"
+                    android:textColor="#424242" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".main.ToolsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:isScrollContainer="true"
+                android:text="@string/Metronome"
+                android:textAllCaps="false"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                app:icon="@drawable/ic_baseline_music_note_24"
+                app:iconSize="40dp"
+                app:iconTint="#424242"
+                app:iconTintMode="multiply"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:isScrollContainer="true"
+                android:text="@string/random"
+                android:textAllCaps="false"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                app:icon="@drawable/dice12"
+                app:iconSize="40dp"
+                app:iconTint="#424242"
+                app:iconTintMode="multiply"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button221"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:isScrollContainer="true"
+            android:text="@string/d_whatsapp"
+            android:textAllCaps="false"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_baseline_send_24"
+            app:iconSize="40dp"
+            app:iconTint="#424242" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button642"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:isScrollContainer="true"
+                android:text="@string/bmi_activity"
+                android:textAllCaps="false"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                app:icon="@drawable/ic_baseline_calculate_24"
+                app:iconSize="40dp"
+                app:iconTint="#424242" />
+
+            <Button
+                android:id="@+id/button235"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:isScrollContainer="true"
+                android:text="@string/flashlight"
+                android:textAllCaps="false"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                app:icon="@drawable/ic_baseline_flashlight_on_24"
+                app:iconSize="40dp"
+                app:iconTint="#4B463F" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button245"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:isScrollContainer="true"
+                android:text="@string/microphone"
+                android:textAllCaps="false"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                app:icon="@drawable/ic_baseline_mic_24"
+                app:iconSize="40dp"
+                app:iconTint="#424242" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

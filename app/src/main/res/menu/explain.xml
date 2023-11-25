@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/explain"
+        android:icon="@drawable/ic_baseline_question_mark_24"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/shortcut"
+        android:icon="@drawable/ic_baseline_app_shortcut_24"
+        android:title="@string/add_shortcut"
+        app:showAsAction="ifRoom" />
+</menu>

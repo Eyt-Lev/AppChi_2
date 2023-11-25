@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <permission
+        android:name="com.nosh.appchi.NOTIFICATION_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="preferExternal"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyFirstApp"
+        tools:targetApi="31">
+        <activity android:name=".fun.Internet" />
+        <activity
+            android:name=".productivity.parabulaThings.ParabulaThings"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5800417840359277~6005806425" />
+
+        <activity
+            android:name=".tools.DWhatsApp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".tools.Record"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".tools.Light"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".fun.Fart"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".fun.Hallel"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".main.Settings"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".productivity.langs.Lang"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".productivity.tasks.Todo"
+            android:exported="false" />
+        <activity
+            android:name=".tools.BMI"
+            android:exported="false" />
+        <activity
+            android:name=".tools.Random"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".fun.jokes.Jokes"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".main.Main"
+            android:exported="true"
+            android:theme="@style/Theme.AppSplash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".productivity.tasks.TaskActivity"
+            android:label="@string/tasks_activity" />
+        <activity android:name=".tools.Metronome" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.nosh.appchi.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver
+            android:name=".fun.jokes.NotificationPublisher"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="com.nosh.appchi.NOTIFICATION_PERMISSION">
+            <intent-filter>
+                <action android:name="com.nosh.appchi.NOTIFICATION_PUBLISHER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
